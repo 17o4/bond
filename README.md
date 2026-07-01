@@ -31,6 +31,23 @@ npm run dev
 
 Open the URL printed in the terminal.
 
+## Deploy to GitHub Pages
+This repo includes a GitHub Actions workflow for Pages deployment.
+
+### One-time GitHub setup
+1. Open repo `Settings` → `Secrets and variables` → `Actions`.
+2. Add these repository secrets:
+   - `VITE_SUPABASE_URL`
+   - `VITE_SUPABASE_ANON_KEY`
+3. Open `Settings` → `Pages`.
+4. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+
+### Deploy
+Push to `main`, or run the `Deploy to GitHub Pages` workflow manually.
+
+Expected site URL:
+`https://mithi0209.github.io/bond/`
+
 ## MVP calculation rules
 - **Funds (date D):** Wallet += amount  
 - **Trade placed (T):** Wallet −= amount, Reserved += amount  

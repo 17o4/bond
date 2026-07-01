@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import { AppStoreProvider } from './state/store.tsx'
@@ -8,9 +8,9 @@ import { AppStoreProvider } from './state/store.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <AppStoreProvider>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </AppStoreProvider>
   </StrictMode>,
 )
